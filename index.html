@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aaditya Dhital</title>
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+  <link rel="manifest" href="favicons/site.webmanifest">
+
+
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="hamburger.js" defer></script>
+  <script src="new.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">
+        <a href="#home" class="logo">Aaditya</a>
+      </div>
+      <div class="right">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contactme">Contact Me</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="firstsection" id="home">
+      <div class="leftsection">
+        Hi, My name is <span class="purple">Aaditya</span>
+        <div>and I am a passionate</div>
+        <span id="element"></span>
+      </div>
+      <div class="rightsection">
+        <img src="pww.png" alt="Photo" />
+      </div>
+    </section>
+    <hr />
+
+    <section class="about-section" id="about">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          Hey there! I'm Aaditya, a young and enthusiastic web developer from the beautiful Himalayan country of Nepal. I've been fascinated by computers since I was a kid, and I'm passionate about coding and creating amazing digital experiences. I'm currently learning HTML, CSS, and JavaScript, and I'm also pretty comfortable with C programming. I love the challenge of building something from scratch and seeing it come to life. In addition to coding, I'm also a budding filmmaker. I enjoy capturing the beauty of the world around me and sharing it with others through cinematic storytelling. I'm excited to see where my journey takes me, and I can't wait to share my work with the world.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="pww.png" alt="photo">
+      </div>
+    </section>
+    <hr>
+
+    <section class="services-section" id="services">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+          <div class="service-item">
+              <div class="service-content">
+                  <h3>Web Development</h3>
+                  <p>High-performance websites designed for all platforms.</p>
+              </div>
+          </div>
+          <div class="service-item">
+              <div class="service-content">
+                  <h3>UI/UX Design</h3>
+                  <p>Creating smooth and engaging user experiences.</p>
+              </div>
+          </div>
+          <div class="service-item">
+              <div class="service-content">
+                  <h3>Motion Graphics</h3>
+                  <p>Bringing brands to life with creative animations.</p>
+              </div>
+          </div>
+          <div class="service-item">
+              <div class="service-content">
+                  <h3>Mobile Development</h3>
+                  <p>High-quality mobile applications for diverse needs.</p>
+              </div>
+          </div>
+          <div class="service-item">
+              <div class="service-content">
+                  <h3>eCommerce Solutions</h3>
+                  <p>Comprehensive solutions for successful online stores.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  
+  
+
+    <hr>
+
+    <section class="fourthsection" id="contactme">
+      <h1>Connect With Me</h1>
+      <br/>
+
+      <div class="social-links">
+        <a href="/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="/" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+
+      <div class="login">
+        <form onsubmit="return validate()" id="login" action="message.html" target="_blank">
+          <label for="Uname" class="flebel"><b>User Name</b></label>
+          <input type="text" name="Uname" id="uname" placeholder="Username" required />
+          <br /><br />
+          <label for="Email" class="flebel"><b>Email</b></label>
+          <input type="email" name="Email" id="email" placeholder="Email Address" required />
+          <br /><br />
+          <label for="Pass" class="flebel"><b>Password</b></label>
+          <input type="password" name="Pass" id="pass" placeholder="Password" required />
+          <br /><br />
+          <label class="flebel"><b>Gender</b></label>
+          <div class="gender-options">
+            <input type="radio" name="gender" value="male" id="male" required />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female" id="female" />
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="other" id="other" />
+            <label for="other">Other</label>
+          </div>
+          <br /><br />
+          <input type="checkbox" id="check" />
+          <label for="check">Remember me</label>
+          <br /><br />
+          <input type="submit" name="log" id="log" value="Log In" />
+          <br /><br />
+        </form>
+      </div>
+    </section>
+    <hr />
+    
+  </main>
+
+ <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+ <script>
+  var typed = new Typed('#element', {
+  strings: ['Web Developer', 'Graphics Designer','Cinematographer','UI/UX Designer','C programer']
+  typeSpeed: 60,
+});
+</script>
+</body>
+</html>
